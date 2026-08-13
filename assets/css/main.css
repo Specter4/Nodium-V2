@@ -359,7 +359,7 @@ h1, h2, h3, h4 {
 }
 
 /* main nav */
-.nav-main { display: none; align-items: center; gap: 4px; margin-inline: auto; }
+.nav-main { display: flex; align-items: center; gap: 4px; margin-inline: auto; }
 .nav-item { position: relative; }
 .nav-link {
   display: inline-flex; align-items: center; gap: 7px;
