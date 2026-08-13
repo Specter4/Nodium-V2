@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-hidden="true">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#1d1d1d"/>
+      <stop offset="55%" stop-color="#101010"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </radialGradient>
+    <linearGradient id="vg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#glow)"/>
+  <rect x="230" y="260" width="560" height="380" rx="16" fill="#101010" stroke="#2e2e2e" stroke-width="3" />
+  <line x1="270" y1="304" x2="400" y2="304" stroke="#4a4a4a" stroke-width="9" stroke-linecap="round"/>
+  <polyline points="280,560 380,500 480,520 580,430 680,460 750,350" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="280,590 280,560 380,500 480,520 580,430 680,460 750,350 750,590" fill="#ffffff" opacity="0.05"/>
+  <circle cx="280" cy="560" r="7" fill="#0a0a0a" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="380" cy="500" r="7" fill="#0a0a0a" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="480" cy="520" r="7" fill="#0a0a0a" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="580" cy="430" r="7" fill="#0a0a0a" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="680" cy="460" r="7" fill="#0a0a0a" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="750" cy="350" r="10" fill="#0a0a0a" stroke="#ffffff" stroke-width="4"/>
+  <rect x="840" y="300" width="200" height="92" rx="14" fill="#151515" stroke="#2e2e2e" stroke-width="2" />
+  <line x1="864" y1="330" x2="954" y2="330" stroke="#e5e5e5" stroke-width="8" stroke-linecap="round"/>
+  <line x1="864" y1="360" x2="924" y2="360" stroke="#4a4a4a" stroke-width="6" stroke-linecap="round"/>
+  <rect x="840" y="420" width="200" height="92" rx="14" fill="#151515" stroke="#2e2e2e" stroke-width="2" />
+  <line x1="864" y1="450" x2="954" y2="450" stroke="#e5e5e5" stroke-width="8" stroke-linecap="round"/>
+  <line x1="864" y1="480" x2="924" y2="480" stroke="#4a4a4a" stroke-width="6" stroke-linecap="round"/>
+  <rect x="840" y="540" width="200" height="92" rx="14" fill="#151515" stroke="#2e2e2e" stroke-width="2" />
+  <line x1="864" y1="570" x2="954" y2="570" stroke="#e5e5e5" stroke-width="8" stroke-linecap="round"/>
+  <line x1="864" y1="600" x2="924" y2="600" stroke="#4a4a4a" stroke-width="6" stroke-linecap="round"/>
+  <rect width="1200" height="900" fill="url(#vg)"/>
+</svg>

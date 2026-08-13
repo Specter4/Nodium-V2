@@ -1,0 +1,7 @@
+# Nodium — robots.txt
+# Allow all crawlers. Update the sitemap URL when you change SITE_URL in data/site.json.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://nodium.co/sitemap.xml

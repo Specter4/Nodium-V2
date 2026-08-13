@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-hidden="true">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#1d1d1d"/>
+      <stop offset="55%" stop-color="#101010"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </radialGradient>
+    <linearGradient id="vg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#glow)"/>
+  <circle cx="430" cy="430" r="110" fill="#141414" stroke="#9c9c9c" stroke-width="4"/>
+  <circle cx="430" cy="430" r="136" fill="none" stroke="#9c9c9c" stroke-width="10" stroke-dasharray="10 14" transform="rotate(12 430 430)"/>
+  <circle cx="430" cy="430" r="46.199999999999996" fill="none" stroke="#9c9c9c" stroke-width="4"/>
+  <circle cx="430" cy="430" r="19.8" fill="#9c9c9c"/>
+  <circle cx="680" cy="560" r="150" fill="#141414" stroke="#e5e5e5" stroke-width="4"/>
+  <circle cx="680" cy="560" r="182" fill="none" stroke="#e5e5e5" stroke-width="10" stroke-dasharray="10 14" transform="rotate(20 680 560)"/>
+  <circle cx="680" cy="560" r="63.0" fill="none" stroke="#e5e5e5" stroke-width="4"/>
+  <circle cx="680" cy="560" r="27.0" fill="#e5e5e5"/>
+  <circle cx="880" cy="380" r="80" fill="#141414" stroke="#4a4a4a" stroke-width="4"/>
+  <circle cx="880" cy="380" r="100" fill="none" stroke="#4a4a4a" stroke-width="10" stroke-dasharray="10 14" transform="rotate(30 880 380)"/>
+  <circle cx="880" cy="380" r="33.6" fill="none" stroke="#4a4a4a" stroke-width="4"/>
+  <circle cx="880" cy="380" r="14.399999999999999" fill="#4a4a4a"/>
+  <line x1="540" y1="430" x2="620" y2="520" stroke="#3a3a3a" stroke-width="5"/>
+  <line x1="750" y1="610" x2="860" y2="460" stroke="#3a3a3a" stroke-width="5"/>
+  <circle cx="240" cy="620" r="10" fill="#0a0a0a" stroke="#9c9c9c" stroke-width="3"/>
+  <circle cx="1000" cy="640" r="10" fill="#0a0a0a" stroke="#9c9c9c" stroke-width="3"/>
+  <line x1="240" y1="620" x2="430" y2="500" stroke="#3a3a3a" stroke-width="3"/>
+  <rect width="1200" height="900" fill="url(#vg)"/>
+</svg>

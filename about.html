@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ================================================================
+       NODIUM — About page (story, values, stats & team render from
+       data/site.json via assets/js/about.js)
+       ================================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Nodium</title>
+  <meta name="description" content="Nodium is a small studio with exacting standards — 35+ hand-built templates, tools and automations trusted by 12,000+ customers in 40+ countries.">
+  <link rel="canonical" href="https://nodium.co/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nodium">
+  <meta property="og:title" content="About — Nodium">
+  <meta property="og:description" content="A small studio with exacting standards. Hand-built digital products since 2022.">
+  <meta property="og:url" content="https://nodium.co/about.html">
+  <meta property="og:image" content="https://nodium.co/assets/images/about.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css?v=1">
+</head>
+<body data-page="about">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div id="app-header"></div>
+
+  <main id="main">
+    <!-- ================================================================
+         ABOUT HERO
+         ================================================================ -->
+    <section class="section" style="padding-top:calc(var(--header-h) + clamp(48px,8vw,96px))">
+      <div class="container">
+        <div class="about-hero">
+          <div>
+            <span class="kicker" data-reveal>About Nodium</span>
+            <h1 class="display-title" data-reveal style="margin-bottom:20px">A small studio with exacting standards.</h1>
+            <p class="lead" data-reveal>Nodium started with a simple frustration: most digital products are built for screenshots, not for real work. We set out to make tools that respect your time and your taste.</p>
+          </div>
+          <div class="about-img" data-reveal>
+            <img src="assets/images/about.jpg" alt="Minimal monochrome desk scene with a laptop and a stack of paper" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         STORY (paragraphs from data/site.json)
+         ================================================================ -->
+    <section class="section" style="padding-top:clamp(40px,5vw,60px)">
+      <div class="container">
+        <div class="about-story" id="about-story" data-reveal></div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         VALUES (from data/site.json)
+         ================================================================ -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="kicker">What we stand for</span>
+          <h2 class="section-title">Four rules we don't break.</h2>
+        </div>
+        <div class="values-grid-4" id="about-values" data-reveal-group></div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         STATS BAND (from data/site.json, animated counters)
+         ================================================================ -->
+    <section class="section" style="padding-block:clamp(32px,4vw,48px)">
+      <div class="container">
+        <div class="stats-band" id="about-stats" data-reveal-group></div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         TEAM (from data/site.json)
+         ================================================================ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="kicker">The people</span>
+          <h2 class="section-title">Small team. Long hours.</h2>
+          <p class="section-sub">Three people, one standard. Everyone here ships work they'd put their name on — literally.</p>
+        </div>
+        <div class="team-grid" id="team-grid" data-reveal-group></div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         CTA
+         ================================================================ -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div style="border:1px solid var(--line);border-radius:18px;padding:clamp(36px,6vw,72px);text-align:center;background:var(--card)" data-reveal>
+          <h2 class="section-title" style="margin-bottom:12px">See what the fuss is about.</h2>
+          <p style="color:var(--text-2);max-width:460px;margin:0 auto 28px">Browse the catalogue — every product includes lifetime updates and a 14-day refund, no questions asked.</p>
+          <a class="btn btn-primary" href="products.html">Browse Products <span class="arr">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+  <div id="cart-drawer"></div>
+  <div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
+
+  <script src="assets/js/data.js?v=1"></script>
+  <script src="assets/js/app.js?v=1"></script>
+  <script src="assets/js/cart.js?v=1"></script>
+  <script src="assets/js/about.js?v=1"></script>
+</body>
+</html>

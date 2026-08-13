@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-hidden="true">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#1d1d1d"/>
+      <stop offset="55%" stop-color="#101010"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </radialGradient>
+    <linearGradient id="vg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#glow)"/>
+  <polygon points="600,270 1050,380 1050,660 600,550" fill="#151515" stroke="#2e2e2e" stroke-width="3"/>
+  <polygon points="600,270 150,380 150,660 600,550" fill="#121212" stroke="#2e2e2e" stroke-width="3"/>
+  <line x1="600" y1="270" x2="600" y2="550" stroke="#e5e5e5" stroke-width="4"/>
+  <line x1="660" y1="420" x2="990" y2="464" stroke="#9c9c9c" stroke-width="6" stroke-linecap="round"/>
+  <line x1="660" y1="462" x2="990" y2="506" stroke="#9c9c9c" stroke-width="6" stroke-linecap="round"/>
+  <line x1="660" y1="504" x2="990" y2="548" stroke="#9c9c9c" stroke-width="6" stroke-linecap="round"/>
+  <line x1="660" y1="546" x2="990" y2="590" stroke="#9c9c9c" stroke-width="6" stroke-linecap="round"/>
+  <line x1="660" y1="588" x2="990" y2="632" stroke="#9c9c9c" stroke-width="6" stroke-linecap="round"/>
+  <line x1="540" y1="420" x2="210" y2="464" stroke="#6b6b6b" stroke-width="6" stroke-linecap="round"/>
+  <line x1="540" y1="462" x2="210" y2="506" stroke="#6b6b6b" stroke-width="6" stroke-linecap="round"/>
+  <line x1="540" y1="504" x2="210" y2="548" stroke="#6b6b6b" stroke-width="6" stroke-linecap="round"/>
+  <line x1="540" y1="546" x2="210" y2="590" stroke="#6b6b6b" stroke-width="6" stroke-linecap="round"/>
+  <line x1="540" y1="588" x2="210" y2="632" stroke="#6b6b6b" stroke-width="6" stroke-linecap="round"/>
+  <rect x="586" y="258" width="12" height="150" fill="#ffffff"/>
+  <polygon points="586,408 592,388 598,408" fill="#ffffff"/>
+  <ellipse cx="600" cy="700" rx="430" ry="36" fill="#000000" opacity="0.55"/>
+  <rect width="1200" height="900" fill="url(#vg)"/>
+</svg>

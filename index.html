@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ================================================================
+       NODIUM — Home page
+       Page copy (headline, sub, value props…) lives partly here and
+       partly in data/site.json (hero stats, testimonials, newsletter).
+       ================================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nodium — Templates, Tools & Automation for Modern Work</title>
+  <meta name="description" content="Nodium is a studio-crafted collection of premium templates, tools and automations — Notion systems, resumes, websites, n8n workflows and more. Instant download, lifetime updates, commercial license.">
+  <link rel="canonical" href="https://nodium.co/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nodium">
+  <meta property="og:title" content="Nodium — Templates, Tools & Automation for Modern Work">
+  <meta property="og:description" content="Work, refined. Premium templates, tools and automations that turn repetitive work into systems you'll never think about again.">
+  <meta property="og:url" content="https://nodium.co/">
+  <meta property="og:image" content="https://nodium.co/assets/images/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css?v=1">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Nodium","url":"https://nodium.co","description":"Premium digital products — templates, tools and automations.","sameAs":["https://x.com/nodium","https://instagram.com/nodium","https://linkedin.com/company/nodium"]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"Nodium","url":"https://nodium.co","potentialAction":{"@type":"SearchAction","target":"https://nodium.co/products.html?q={search_term_string}","query-input":"required name=search_term_string"}}
+  </script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- header + mobile nav injected here by assets/js/app.js -->
+  <div id="app-header"></div>
+
+  <main id="main">
+    <!-- ================================================================
+         HERO
+         ================================================================ -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="kicker" data-reveal>Templates · Tools · Automation</span>
+          <h1 class="display-title" data-reveal>Work, <em style="font-style:normal;color:var(--text-3)">refined.</em></h1>
+          <p class="hero-sub" data-reveal>Nodium is a studio-crafted collection of templates, tools and automations that turn repetitive work into systems you'll never think about again. Designed obsessively. Built to last. Delivered instantly.</p>
+          <div class="hero-ctas" data-reveal>
+            <a class="btn btn-primary" href="products.html">Browse Products <span class="arr">→</span></a>
+            <a class="btn btn-ghost" href="#categories">Explore Categories</a>
+          </div>
+          <!-- hero stats rendered from data/site.json by home.js (animated counters) -->
+          <div class="hero-stats" id="hero-stats" data-reveal-group></div>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <div class="hero-img-wrap">
+            <img src="assets/images/hero.jpg" alt="Abstract monochrome render of floating interface cards and wireframe panels" fetchpriority="high">
+          </div>
+          <div class="hero-float hero-float--rating">
+            <span class="hf-icon">★</span>
+            <span><span class="hf-main">4.9 / 5 rating</span><br><span class="hf-sub">2,400+ verified reviews</span></span>
+          </div>
+          <div class="hero-float hero-float--download">
+            <span class="hf-icon">↓</span>
+            <span><span class="hf-main">Instant download</span><br><span class="hf-sub">Pay once · use forever</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         MARQUEE — customer wordmarks
+         ================================================================ -->
+    <section class="marquee" aria-label="Trusted by teams at">
+      <div class="marquee-track" id="marquee-track"></div>
+    </section>
+
+    <!-- ================================================================
+         FEATURED / BESTSELLING PRODUCTS
+         (grid rendered from data/products.json by home.js)
+         ================================================================ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="kicker">Bestsellers</span>
+          <h2 class="section-title">The products people buy first.</h2>
+          <p class="section-sub">A rotating selection of our most-loved tools. Every product is designed, tested and updated in-house.</p>
+        </div>
+        <div class="product-grid" id="featured-grid" data-reveal-group></div>
+        <p style="margin-top:40px" data-reveal><a class="btn btn-ghost" href="products.html">View all 35 products <span class="arr">→</span></a></p>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         CATEGORY SHOWCASE (grid rendered from data/categories.json)
+         ================================================================ -->
+    <section class="section" id="categories" style="padding-top:0">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="kicker">The catalogue</span>
+          <h2 class="section-title">Ten categories. Zero noise.</h2>
+          <p class="section-sub">Every product is made in-house and kept to the same standard — pick a category and browse.</p>
+        </div>
+        <div class="category-grid" id="category-grid" data-reveal-group></div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         VALUE PROPS — light band (black on white)
+         ================================================================ -->
+    <section class="section light">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="kicker">Why Nodium</span>
+          <h2 class="section-title">Buy once. Use it forever.</h2>
+        </div>
+        <div class="values-grid" data-reveal-group>
+          <div class="value-item" data-reveal>
+            <div class="value-icon">↓</div>
+            <h3 class="value-title">Instant download</h3>
+            <p class="value-text">Pay once, download immediately. No waiting, no shipping, no account juggling.</p>
+          </div>
+          <div class="value-item" data-reveal>
+            <div class="value-icon">↻</div>
+            <h3 class="value-title">Lifetime updates</h3>
+            <p class="value-text">Every purchase includes every future version of the product. Forever. No subscriptions.</p>
+          </div>
+          <div class="value-item" data-reveal>
+            <div class="value-icon">✓</div>
+            <h3 class="value-title">Commercial license</h3>
+            <p class="value-text">Use every product in client work and commercial projects from day one.</p>
+          </div>
+          <div class="value-item" data-reveal>
+            <div class="value-icon">●</div>
+            <h3 class="value-title">Human support</h3>
+            <p class="value-text">Real people answer within 24 hours — before, during and after your purchase.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         TESTIMONIALS (rendered from data/site.json by home.js)
+         ================================================================ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="kicker">Social proof</span>
+          <h2 class="section-title">Trusted by 12,000+ makers.</h2>
+          <p class="section-sub">Freelancers, founders and teams who stopped rebuilding their tools every month.</p>
+        </div>
+        <div class="t-grid" id="testimonial-grid" data-reveal-group></div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         NEWSLETTER — light band
+         (endpoint configurable in data/site.json → config.forms)
+         ================================================================ -->
+    <section class="newsletter light">
+      <div class="container newsletter-inner">
+        <div data-reveal>
+          <span class="kicker">The Nodium Dispatch</span>
+          <h2 class="section-title" style="margin-bottom:12px">New products, first.</h2>
+          <p style="color:var(--text-2);max-width:440px">One short email a month: new releases, free upgrades and the occasional working template. No noise, ever.</p>
+        </div>
+        <div data-reveal>
+          <form id="newsletter-form" class="newsletter-form" novalidate>
+            <input class="nl-input" type="email" name="email" placeholder="you@company.com" aria-label="Email address" autocomplete="email" required>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+          <p class="nl-note">Unsubscribe anytime. We never share your email.</p>
+          <p class="nl-success" id="newsletter-success">✓ You're on the list — welcome to Nodium.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer injected here by assets/js/app.js -->
+  <div id="app-footer"></div>
+
+  <!-- cart drawer injected here by assets/js/cart.js -->
+  <div id="cart-drawer"></div>
+
+  <!-- global toast -->
+  <div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
+
+  <!-- page scripts -->
+  <script src="assets/js/data.js?v=1"></script>
+  <script src="assets/js/app.js?v=1"></script>
+  <script src="assets/js/cart.js?v=1"></script>
+  <script src="assets/js/home.js?v=1"></script>
+  <script src="assets/js/forms.js?v=1"></script>
+</body>
+</html>

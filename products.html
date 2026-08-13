@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ================================================================
+       NODIUM — All Products (catalogue with search, filters & sorting)
+       Product data comes from data/products.json via assets/js/catalog.js
+       ================================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Products — Nodium</title>
+  <meta name="description" content="Browse the full Nodium catalogue: 35+ premium templates, tools and automations across 10 categories. Search, filter and sort — instant download, lifetime updates.">
+  <link rel="canonical" href="https://nodium.co/products.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nodium">
+  <meta property="og:title" content="All Products — Nodium">
+  <meta property="og:description" content="35+ premium templates, tools and automations. Search, filter and sort the full catalogue.">
+  <meta property="og:url" content="https://nodium.co/products.html">
+  <meta property="og:image" content="https://nodium.co/assets/images/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css?v=1">
+</head>
+<body data-page="products">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div id="app-header"></div>
+
+  <main id="main">
+    <!-- ================================================================
+         CATALOGUE HEADER + SEARCH + FILTERS
+         ================================================================ -->
+    <section class="subhero">
+      <div class="container subhero-inner">
+        <span class="kicker" data-reveal>Catalogue</span>
+        <h1 class="display-title" data-reveal style="margin-bottom:18px">All products.</h1>
+        <p class="lead" data-reveal>Thirty-five products. Ten categories. One standard. Search the catalogue, filter by category or price, and sort however you like.</p>
+
+        <!-- search -->
+        <div class="search-bar" data-reveal style="margin-top:34px">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.6-4.6"/></svg>
+          <input type="search" id="search-input" placeholder="Search templates, workflows, tools…" aria-label="Search products" autocomplete="off">
+        </div>
+
+        <!-- category chips (rendered by catalog.js) -->
+        <div class="filter-row" data-reveal>
+          <span id="cat-chips" style="display:contents"></span>
+        </div>
+
+        <!-- price + sort -->
+        <div class="filter-row" data-reveal>
+          <span id="price-chips" style="display:contents"></span>
+          <span class="filter-spacer"></span>
+          <label class="select-wrap" for="sort-select">
+            <span class="sr-only">Sort products</span>
+            <select class="select" id="sort-select" aria-label="Sort products"></select>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         RESULTS
+         ================================================================ -->
+    <section class="section" style="padding-top:clamp(40px,5vw,56px)">
+      <div class="container">
+        <div class="results-bar">
+          <span id="result-count"></span>
+          <button class="clear-link" id="clear-filters">Clear all filters ×</button>
+        </div>
+
+        <div class="product-grid" id="catalog-grid" data-reveal-group></div>
+
+        <!-- empty state (shown when no products match) -->
+        <div class="empty-state" id="empty-state" style="display:none">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.6-4.6"/></svg>
+          <h3>Nothing matches your search.</h3>
+          <p>Try a different keyword, or clear the filters to see the full catalogue.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+  <div id="cart-drawer"></div>
+  <div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
+
+  <script src="assets/js/data.js?v=1"></script>
+  <script src="assets/js/app.js?v=1"></script>
+  <script src="assets/js/cart.js?v=1"></script>
+  <script src="assets/js/catalog.js?v=1"></script>
+</body>
+</html>

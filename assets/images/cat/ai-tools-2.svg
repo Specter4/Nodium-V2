@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-hidden="true">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#1d1d1d"/>
+      <stop offset="55%" stop-color="#101010"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </radialGradient>
+    <linearGradient id="vg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#glow)"/>
+  <line x1="0" y1="0" x2="0" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="44" y1="0" x2="44" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="88" y1="0" x2="88" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="132" y1="0" x2="132" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="176" y1="0" x2="176" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="220" y1="0" x2="220" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="264" y1="0" x2="264" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="308" y1="0" x2="308" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="352" y1="0" x2="352" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="396" y1="0" x2="396" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="440" y1="0" x2="440" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="484" y1="0" x2="484" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="528" y1="0" x2="528" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="572" y1="0" x2="572" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="616" y1="0" x2="616" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="660" y1="0" x2="660" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="704" y1="0" x2="704" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="748" y1="0" x2="748" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="792" y1="0" x2="792" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="836" y1="0" x2="836" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="880" y1="0" x2="880" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="924" y1="0" x2="924" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="968" y1="0" x2="968" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="1012" y1="0" x2="1012" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="1056" y1="0" x2="1056" y2="900" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="44" x2="1200" y2="44" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="88" x2="1200" y2="88" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="132" x2="1200" y2="132" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="176" x2="1200" y2="176" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="220" x2="1200" y2="220" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="264" x2="1200" y2="264" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="308" x2="1200" y2="308" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="352" x2="1200" y2="352" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="396" x2="1200" y2="396" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="440" x2="1200" y2="440" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="484" x2="1200" y2="484" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="528" x2="1200" y2="528" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="572" x2="1200" y2="572" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="616" x2="1200" y2="616" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="660" x2="1200" y2="660" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="704" x2="1200" y2="704" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="748" x2="1200" y2="748" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="792" x2="1200" y2="792" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="836" x2="1200" y2="836" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <line x1="0" y1="880" x2="1200" y2="880" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+  <circle cx="600" cy="430" r="200" fill="none" stroke="#2e2e2e" stroke-width="3"/>
+  <circle cx="600" cy="430" r="120" fill="none" stroke="#3a3a3a" stroke-width="2" stroke-dasharray="4 12"/>
+  <ellipse cx="600" cy="430" rx="260" ry="90" fill="none" stroke="#9c9c9c" stroke-width="3" transform="rotate(-24 600 430)"/>
+  <circle cx="838" cy="335" r="16" fill="#0a0a0a" stroke="#e5e5e5" stroke-width="4"/>
+  <circle cx="362" cy="525" r="12" fill="#0a0a0a" stroke="#9c9c9c" stroke-width="3"/>
+  <rect x="554" y="384" width="92" height="92" rx="18" transform="rotate(45 600 430)" fill="#ffffff"/>
+  <rect x="584" y="414" width="32" height="32" rx="7" transform="rotate(45 600 430)" fill="#0a0a0a"/>
+  <rect width="1200" height="900" fill="url(#vg)"/>
+</svg>

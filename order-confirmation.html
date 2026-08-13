@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ================================================================
+       NODIUM — Order confirmation (rendered by assets/js/order.js)
+       ================================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order confirmed — Nodium</title>
+  <meta name="description" content="Your Nodium order is confirmed — download your files instantly.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://nodium.co/order-confirmation.html">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css?v=1">
+</head>
+<body data-page="order">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div id="app-header"></div>
+
+  <main id="main">
+    <!-- confirmation + downloads rendered here by assets/js/order.js -->
+    <div id="order-root"></div>
+  </main>
+
+  <div id="app-footer"></div>
+  <div id="cart-drawer"></div>
+  <div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
+
+  <script src="assets/js/data.js?v=1"></script>
+  <script src="assets/js/app.js?v=1"></script>
+  <script src="assets/js/cart.js?v=1"></script>
+  <script src="assets/js/order.js?v=1"></script>
+</body>
+</html>

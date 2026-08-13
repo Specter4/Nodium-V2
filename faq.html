@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ================================================================
+       NODIUM — FAQ (questions from data/site.json via assets/js/faq.js)
+       ================================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — Nodium</title>
+  <meta name="description" content="Answers about licensing, refunds, delivery, file formats, updates and support for Nodium digital products. Still stuck? We reply within 24 hours.">
+  <link rel="canonical" href="https://nodium.co/faq.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nodium">
+  <meta property="og:title" content="FAQ — Nodium">
+  <meta property="og:description" content="Licensing, refunds, delivery, formats and support — answered.">
+  <meta property="og:url" content="https://nodium.co/faq.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css?v=1">
+</head>
+<body data-page="faq">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div id="app-header"></div>
+
+  <main id="main">
+    <!-- ================================================================
+         FAQ HEADER
+         ================================================================ -->
+    <section class="subhero">
+      <div class="container subhero-inner">
+        <span class="kicker" data-reveal>Help center</span>
+        <h1 class="display-title" data-reveal style="margin-bottom:18px">Frequently asked.</h1>
+        <p class="lead" data-reveal>Everything about licensing, refunds, delivery, formats and support. If your question isn't here, we're one email away.</p>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         ACCORDION (items from data/site.json)
+         ================================================================ -->
+    <section class="section">
+      <div class="container">
+        <div class="faq-wrap">
+          <div class="acc-list acc-single" id="faq-list"></div>
+        </div>
+
+        <!-- contact CTA -->
+        <div class="faq-cta" data-reveal>
+          <div>
+            <h3>Still have questions?</h3>
+            <p>Real humans, real answers — usually within a few hours.</p>
+          </div>
+          <a class="btn btn-primary" href="contact.html">Contact support <span class="arr">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+  <div id="cart-drawer"></div>
+  <div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
+
+  <script src="assets/js/data.js?v=1"></script>
+  <script src="assets/js/app.js?v=1"></script>
+  <script src="assets/js/cart.js?v=1"></script>
+  <script src="assets/js/faq.js?v=1"></script>
+</body>
+</html>

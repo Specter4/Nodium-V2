@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-hidden="true">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#1d1d1d"/>
+      <stop offset="55%" stop-color="#101010"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </radialGradient>
+    <linearGradient id="vg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#glow)"/>
+  <rect x="300" y="220" width="600" height="300" rx="20" fill="#101010" stroke="#2e2e2e" stroke-width="3" />
+  <rect x="300" y="220" width="600" height="58" rx="20" fill="#161616"/>
+  <rect x="300" y="262" width="600" height="16" fill="#161616"/>
+  <circle cx="330" cy="249" r="9" fill="#e5e5e5"/>
+  <line x1="356" y1="240" x2="486" y2="240" stroke="#4a4a4a" stroke-width="8" stroke-linecap="round"/>
+  <rect x="600" y="310" width="250" height="84" rx="16" fill="#ffffff" stroke="#2e2e2e" stroke-width="2" />
+  <line x1="624" y1="334" x2="774" y2="334" stroke="#0a0a0a" stroke-width="6" stroke-linecap="round"/>
+  <line x1="624" y1="360" x2="774" y2="360" stroke="#0a0a0a" stroke-width="6" stroke-linecap="round"/>
+  <rect x="350" y="430" width="260" height="70" rx="16" fill="#1a1a1a" stroke="#2e2e2e" stroke-width="2" />
+  <line x1="374" y1="452" x2="544" y2="452" stroke="#e5e5e5" stroke-width="6" stroke-linecap="round"/>
+  <line x1="374" y1="476" x2="544" y2="476" stroke="#e5e5e5" stroke-width="6" stroke-linecap="round"/>
+  <rect x="300" y="560" width="600" height="64" rx="16" fill="#0e0e0e" stroke="#2e2e2e" stroke-width="2" />
+  <circle cx="870" cy="592" r="18" fill="#ffffff"/>
+  <polygon points="870,582 882,592 870,602" fill="#0a0a0a"/>
+  <rect x="380" y="680" width="200" height="64" rx="14" fill="#141414" stroke="#2e2e2e" stroke-width="2" />
+  <rect x="398" y="698" width="28" height="28" rx="6" fill="#2e2e2e"/>
+  <line x1="440" y1="706" x2="530" y2="706" stroke="#9c9c9c" stroke-width="6" stroke-linecap="round"/>
+  <line x1="440" y1="726" x2="500" y2="726" stroke="#4a4a4a" stroke-width="6" stroke-linecap="round"/>
+  <rect x="600" y="680" width="200" height="64" rx="14" fill="#141414" stroke="#2e2e2e" stroke-width="2" />
+  <rect x="618" y="698" width="28" height="28" rx="6" fill="#ffffff"/>
+  <line x1="660" y1="706" x2="750" y2="706" stroke="#9c9c9c" stroke-width="6" stroke-linecap="round"/>
+  <line x1="660" y1="726" x2="720" y2="726" stroke="#4a4a4a" stroke-width="6" stroke-linecap="round"/>
+  <rect x="820" y="680" width="200" height="64" rx="14" fill="#141414" stroke="#2e2e2e" stroke-width="2" />
+  <rect x="838" y="698" width="28" height="28" rx="6" fill="#2e2e2e"/>
+  <line x1="880" y1="706" x2="970" y2="706" stroke="#9c9c9c" stroke-width="6" stroke-linecap="round"/>
+  <line x1="880" y1="726" x2="940" y2="726" stroke="#4a4a4a" stroke-width="6" stroke-linecap="round"/>
+  <rect width="1200" height="900" fill="url(#vg)"/>
+</svg>

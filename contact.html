@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ================================================================
+       NODIUM — Contact / Support
+       Form endpoint configurable in data/site.json → config.forms
+       ================================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Nodium</title>
+  <meta name="description" content="Questions, feedback or custom project requests — talk to a human at Nodium. We read everything and answer within 24 hours.">
+  <link rel="canonical" href="https://nodium.co/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nodium">
+  <meta property="og:title" content="Contact — Nodium">
+  <meta property="og:description" content="Talk to a human. We answer within 24 hours.">
+  <meta property="og:url" content="https://nodium.co/contact.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css?v=1">
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div id="app-header"></div>
+
+  <main id="main">
+    <!-- ================================================================
+         CONTACT HEADER
+         ================================================================ -->
+    <section class="subhero">
+      <div class="container subhero-inner">
+        <span class="kicker" data-reveal>Contact</span>
+        <h1 class="display-title" data-reveal style="margin-bottom:18px">Talk to a human.</h1>
+        <p class="lead" data-reveal>Questions, feedback, custom projects — we read everything and answer within 24 hours.</p>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         FORM + INFO
+         ================================================================ -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- form (demo mode simulates success; see data/site.json) -->
+          <div data-reveal>
+            <form id="contact-form" novalidate>
+              <div class="form-2col">
+                <div class="field">
+                  <label class="field-label" for="c-name">Name</label>
+                  <input class="input" id="c-name" name="name" type="text" autocomplete="name" placeholder="Alex Morgan" required>
+                </div>
+                <div class="field">
+                  <label class="field-label" for="c-email">Email</label>
+                  <input class="input" id="c-email" name="email" type="email" autocomplete="email" placeholder="alex@company.com" required>
+                </div>
+              </div>
+              <div class="field">
+                <label class="field-label" for="c-topic">Topic</label>
+                <select class="select" id="c-topic" name="topic">
+                  <option>Sales &amp; products</option>
+                  <option>Support</option>
+                  <option>Licensing</option>
+                  <option>Custom work</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="field">
+                <label class="field-label" for="c-message">Message</label>
+                <textarea class="textarea" id="c-message" name="message" placeholder="Tell us what's on your mind…" required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Send message <span class="arr">→</span></button>
+              <p style="font-size:12.5px;color:var(--text-3);margin-top:14px">We reply within 24 hours, Mon–Fri. Usually much faster.</p>
+            </form>
+
+            <!-- success state (revealed after submit) -->
+            <div class="form-success" id="contact-success">
+              <div class="fs-icon">✓</div>
+              <h3>Message sent.</h3>
+              <p>Thanks for writing in — a real human will get back to you within 24 hours. For anything urgent, email us directly at hello@nodium.co.</p>
+            </div>
+          </div>
+
+          <!-- info column -->
+          <div data-reveal>
+            <div class="info-card">
+              <h3>Email us</h3>
+              <p><a class="link-underline" href="mailto:hello@nodium.co">hello@nodium.co</a><br>Replies within 24 hours, Mon–Fri.</p>
+            </div>
+            <div class="info-card">
+              <h3>Best times</h3>
+              <p>We're most responsive 9:00–18:00 (GMT+6). Order issues are always prioritized.</p>
+            </div>
+            <div class="info-card">
+              <h3>Common requests</h3>
+              <ul class="info-list" style="margin-top:6px">
+                <li>→ Team &amp; volume licensing</li>
+                <li>→ Custom templates &amp; workflows</li>
+                <li>→ Invoice / receipt requests</li>
+                <li>→ Product suggestions</li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <h3>Legal</h3>
+              <p><a class="link-underline" href="refund-policy.html">Refund &amp; license policy</a><br><a class="link-underline" href="terms.html">Terms of service</a><br><a class="link-underline" href="privacy.html">Privacy policy</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+  <div id="cart-drawer"></div>
+  <div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
+
+  <script src="assets/js/data.js?v=1"></script>
+  <script src="assets/js/app.js?v=1"></script>
+  <script src="assets/js/cart.js?v=1"></script>
+  <script src="assets/js/forms.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ================================================================
+       NODIUM — Product detail (one template for every product)
+       The product is chosen by ?slug=… and rendered by assets/js/product.js
+       from data/products.json. Example: product.html?slug=life-os-dashboard
+       ================================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product — Nodium</title>
+  <meta name="description" content="Premium digital products — templates, tools and automations with instant download, lifetime updates and commercial license.">
+  <link rel="canonical" href="https://nodium.co/product.html">
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Nodium">
+  <meta property="og:title" content="Product — Nodium">
+  <meta property="og:description" content="Premium digital products with instant download and lifetime updates.">
+  <meta property="og:image" content="https://nodium.co/assets/images/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css?v=1">
+</head>
+<body data-page="product">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div id="app-header"></div>
+
+  <main id="main">
+    <!-- full product page rendered here by assets/js/product.js -->
+    <div id="product-root"></div>
+  </main>
+
+  <div id="app-footer"></div>
+  <div id="cart-drawer"></div>
+  <div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
+
+  <script src="assets/js/data.js?v=1"></script>
+  <script src="assets/js/app.js?v=1"></script>
+  <script src="assets/js/cart.js?v=1"></script>
+  <script src="assets/js/product.js?v=1"></script>
+</body>
+</html>

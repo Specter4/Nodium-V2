@@ -1,0 +1,158 @@
+{
+  "_comment": "NODIUM — SITE CONFIG + CONTENT. Edit brand info, contact details, home-page copy, testimonials and FAQs here. After editing, run:  python3 tools/build.py",
+
+  "config": {
+    "siteName": "Nodium",
+    "siteUrl": "https://nodium.co",
+    "tagline": "Templates, tools & automation for modern work",
+    "supportEmail": "hello@nodium.co",
+    "responseTime": "Within 24 hours, Mon–Fri",
+    "currency": "USD",
+    "socials": {
+      "x": "https://x.com/nodium",
+      "instagram": "https://instagram.com/nodium",
+      "linkedin": "https://linkedin.com/company/nodium",
+      "youtube": "https://youtube.com/@nodium",
+      "github": "https://github.com/nodium"
+    },
+    "checkout": {
+      "provider": "demo",
+      "_providerComment": "'demo' = simulated checkout (no real charge). To accept real payments: set provider to 'stripe-payment-link' or 'stripe-checkout' and fill in the keys below. See README.md.",
+      "stripe": {
+        "publishableKey": "",
+        "backendUrl": ""
+      }
+    },
+    "forms": {
+      "_comment": "Leave endpoints empty to run in demo mode (simulated success). For real delivery, paste your Formspree/Mailchimp/ConvertKit endpoint URL.",
+      "newsletterEndpoint": "",
+      "contactEndpoint": ""
+    }
+  },
+
+  "home": {
+    "hero": {
+      "kicker": "Templates · Tools · Automation",
+      "title": "Work, refined.",
+      "subtitle": "Nodium is a studio-crafted collection of templates, tools and automations that turn repetitive work into systems you'll never think about again. Designed obsessively. Built to last. Delivered instantly.",
+      "ctaPrimary": "Browse Products",
+      "ctaPrimaryUrl": "products.html",
+      "ctaSecondary": "Explore Categories",
+      "ctaSecondaryUrl": "#categories",
+      "imageAlt": "Abstract monochrome render of floating interface cards and wireframe panels",
+      "stats": [
+        { "value": 35, "suffix": "+", "label": "Products" },
+        { "value": 12000, "suffix": "+", "label": "Customers" },
+        { "value": 4.9, "suffix": "/5", "label": "Average rating", "decimals": 1 },
+        { "value": 100, "suffix": "%", "label": "Lifetime updates" }
+      ]
+    },
+    "marquee": ["Northwind", "Halcyon", "Pivot & Co", "Alpha Labs", "Monochrome", "Stackworks", "Veridian", "Kite & Co", "Obelisk", "Fern & Co"],
+    "featured": {
+      "kicker": "Bestsellers",
+      "title": "The products people buy first.",
+      "subtitle": "A rotating selection of our most-loved tools. Every product is designed, tested and updated in-house.",
+      "limit": 6
+    },
+    "categories": {
+      "kicker": "The catalogue",
+      "title": "Ten categories. Zero noise.",
+      "subtitle": "Every product is made in-house and kept to the same standard — pick a category and browse."
+    },
+    "valueProps": {
+      "kicker": "Why Nodium",
+      "title": "Buy once. Use it forever.",
+      "items": [
+        { "icon": "download", "title": "Instant download", "text": "Pay once, download immediately. No waiting, no shipping, no account juggling." },
+        { "icon": "refresh", "title": "Lifetime updates", "text": "Every purchase includes every future version of the product. Forever. No subscriptions." },
+        { "icon": "badge", "title": "Commercial license", "text": "Use every product in client work and commercial projects from day one." },
+        { "icon": "chat", "title": "Human support", "text": "Real people answer within 24 hours — before, during and after your purchase." }
+      ]
+    },
+    "testimonials": {
+      "kicker": "Social proof",
+      "title": "Trusted by 12,000+ makers.",
+      "subtitle": "Freelancers, founders and teams who stopped rebuilding their tools every month.",
+      "items": [
+        { "quote": "Nodium's Life OS turned my chaotic Notion workspace into something I actually enjoy opening every morning. That has never happened before.", "name": "Maya Chen", "role": "Founder, Northwind Studio" },
+        { "quote": "The n8n workflows paid for themselves in the first week. I cut four hours of manual invoicing to zero — and it's been running ever since.", "name": "Daniel Okafor", "role": "Operations Lead, Halcyon Labs" },
+        { "quote": "Easily the most polished templates I've bought anywhere. The typography alone is worth the price. It shows in every client deliverable.", "name": "Sofia Reyes", "role": "Independent Product Designer" },
+        { "quote": "We rebuilt our entire client onboarding on one automation kit. Our customers noticed the difference before we told them anything.", "name": "James Whitfield", "role": "Managing Partner, Pivot & Co" },
+        { "quote": "I've bought from every major template shop. Nodium is in a different league — everything just works, and updates actually arrive.", "name": "Aisha Rahman", "role": "Freelance Brand Strategist" },
+        { "quote": "The commercial license is what sold me. I use their tools with clients without a second thought — rare in this industry.", "name": "Tomás Silva", "role": "Creative Director" }
+      ]
+    },
+    "newsletter": {
+      "kicker": "The Nodium Dispatch",
+      "title": "New products, first.",
+      "subtitle": "One short email a month: new releases, free upgrades and the occasional working template. No noise, ever.",
+      "placeholder": "you@company.com",
+      "button": "Subscribe",
+      "privacy": "Unsubscribe anytime. We never share your email."
+    }
+  },
+
+  "about": {
+    "hero": {
+      "kicker": "About Nodium",
+      "title": "A small studio with exacting standards.",
+      "subtitle": "Nodium started with a simple frustration: most digital products are built for screenshots, not for real work. We set out to make tools that respect your time and your taste.",
+      "imageAlt": "Minimal monochrome desk scene with a laptop and a stack of paper"
+    },
+    "story": [
+      "Nodium began in 2022 as a single Notion template shared with a few hundred subscribers. The response was surprising: people kept writing in — not for support, but to say the template had quietly changed how they worked. So we kept going, one product at a time.",
+      "Today Nodium is a catalogue of 35+ templates, tools and automations used by more than 12,000 customers in 40+ countries. We're still a small team. We still hand-build everything. And we still ship every product as if the person buying it is the only person we'll ever have."
+    ],
+    "values": [
+      { "title": "Obsessive detail", "text": "If a label is 1px off, we fix it before we ship. The details are the product." },
+      { "title": "Built for real work", "text": "Every product starts with a process we've lived. If it doesn't save you time, it doesn't ship." },
+      { "title": "Honest pricing", "text": "Pay once, own it forever. No subscriptions, no upsells, no dark patterns." },
+      { "title": "Support that replies", "text": "A real human answers every email within 24 hours — usually faster." }
+    ],
+    "stats": [
+      { "value": 35, "suffix": "+", "label": "Products in the catalogue" },
+      { "value": 12000, "suffix": "+", "label": "Customers served" },
+      { "value": 4.9, "suffix": "/5", "label": "Average rating", "decimals": 1 },
+      { "value": 40, "suffix": "+", "label": "Countries reached" }
+    ],
+    "team": [
+      { "name": "Aarav Sen", "role": "Founder — product & design", "initials": "AS", "bio": "Former design lead. Believes a dashboard can be as considered as a typeface." },
+      { "name": "Priya Nair", "role": "Engineering & automation", "initials": "PN", "bio": "Makes the machines work. Has never met an n8n workflow she couldn't improve." },
+      { "name": "Sami Chowdhury", "role": "Customer experience", "initials": "SC", "bio": "Answers your emails. Reads every review. Turns your feedback into the roadmap." }
+    ]
+  },
+
+  "faqs": [
+    { "q": "What exactly do I get when I purchase?", "a": "Instant access to the product and every file it includes — templates, workflows, source files and documentation — plus lifetime updates and the license described on the product page. Your download links are available immediately after checkout and are also emailed to you." },
+    { "q": "How are products delivered?", "a": "Digitally, immediately. After checkout you land on an order confirmation page with download links for every item in your order. The same links are emailed to you, and they never expire." },
+    { "q": "What file formats are included?", "a": "It depends on the product, and every product page lists its exact formats. As a rule: Notion templates ship as duplicate links, documents as PDF + DOCX/EPUB, websites as clean HTML/CSS/JS, spreadsheets as Excel + Google Sheets, and automations as importable JSON with PDF guides." },
+    { "q": "Can I use Nodium products commercially?", "a": "Yes. Every product includes a commercial license, so you can use it in client work and business projects. The one thing you cannot do is resell, redistribute or repackage the raw files themselves." },
+    { "q": "Do I get updates?", "a": "Yes — lifetime updates, included free with every purchase. When a product improves, the new version appears in your library at no cost. We never charge for updates." },
+    { "q": "What is your refund policy?", "a": "If a product isn't right for you, email us within 14 days of purchase and we'll refund it in full — no questions, no forms. Digital products that have been redistributed are the only exception." },
+    { "q": "How do I get support?", "a": "Email hello@nodium.co and a real human (not a bot) replies within 24 hours on business days. Include your order number if you have one and we'll move faster." },
+    { "q": "Are there any subscription fees?", "a": "No. Every product is a one-time purchase. You own it forever, including all future updates. There are no hidden fees, no membership tiers and no 'pro' upsells." },
+    { "q": "Do I need technical skills to use these products?", "a": "No. Every product is designed for non-technical use and ships with a setup guide. n8n workflows and website templates assume a little comfort with files, but each one includes step-by-step documentation." },
+    { "q": "Can you build something custom for our team?", "a": "Often, yes. We take on a limited number of bespoke projects — internal tools, automation systems and template suites. Email us through the contact page and tell us about the process you want to fix." },
+    { "q": "Which payment methods do you accept?", "a": "All major credit and debit cards via Stripe, with PayPal arriving soon. All payments are processed securely and nothing is stored on our servers." },
+    { "q": "Do you offer team or business licenses?", "a": "Yes. If you're buying for a team of 5 or more, email us for volume pricing and a single-invoice option. Teams get the same lifetime-update guarantee." }
+  ],
+
+  "contact": {
+    "kicker": "Contact",
+    "title": "Talk to a human.",
+    "subtitle": "Questions, feedback, custom projects — we read everything and answer within 24 hours.",
+    "topics": ["Sales & products", "Support", "Licensing", "Custom work", "Something else"]
+  },
+
+  "checkout": {
+    "title": "Checkout",
+    "secureNote": "Demo checkout — no real payment is processed",
+    "payButton": "Pay now",
+    "processing": "Processing…"
+  },
+
+  "order": {
+    "title": "Order confirmed",
+    "downloadsNote": "Your files are ready to download. We've also emailed your receipt and links."
+  }
+}
