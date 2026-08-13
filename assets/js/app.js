@@ -259,9 +259,7 @@
                 "Products " + icon("chev") +
               "</button>" +
             "</div>" +
-            '<div class="nav-item"><a class="nav-link" href="about.html"' + cur("about") + ">About</a></div>" +
-            '<div class="nav-item"><a class="nav-link" href="faq.html"' + cur("faq") + ">FAQ</a></div>" +
-            '<div class="nav-item"><a class="nav-link" href="contact.html"' + cur("contact") + ">Contact</a></div>" +
+            '<div class="nav-item"><a class="nav-link" href="products.html"' + cur("products") + ">All Products</a></div>" +
           "</nav>" +
           '<div class="header-actions">' +
             '<a class="icon-btn" href="products.html" aria-label="Search and filter products">' + icon("search") + "</a>" +
