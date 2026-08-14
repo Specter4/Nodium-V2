@@ -133,7 +133,9 @@
             '<p class="pc-tag">' + N.esc(p.tagline) + "</p>" +
             '<div class="pc-meta">' +
               '<span class="pc-price">' + N.money(p.price) + save + "</span>" +
-              '<span class="pc-rating">' + N.stars(p.rating) + " " + p.rating.toFixed(1) + "</span>" +
+              (typeof p.rating === "number"
+                ? '<span class="pc-rating">' + N.stars(p.rating) + " " + p.rating.toFixed(1) + "</span>"
+                : "") +
             "</div>" +
           "</div>" +
         "</article>"

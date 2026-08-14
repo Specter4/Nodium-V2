@@ -87,11 +87,13 @@
           '<div class="pp-info" data-reveal>' +
             '<a class="pp-cat-link" href="' + cat.slug + '.html">' + N.esc(cat.name) + "</a>" +
             "<h1>" + N.esc(p.name) + "</h1>" +
-            '<div class="pp-rating-row">' +
-              N.stars(p.rating) +
-              "<span>" + p.rating.toFixed(1) + " · " + p.reviewCount + " reviews</span>" +
-              '<a href="#reviews" style="color:var(--text-3)">Read reviews</a>' +
-            "</div>" +
+            (p.reviewCount > 0 && p.rating != null
+              ? '<div class="pp-rating-row">' +
+                  N.stars(p.rating) +
+                  "<span>" + p.rating.toFixed(1) + " · " + p.reviewCount + " reviews</span>" +
+                  '<a href="#reviews" style="color:var(--text-3)">Read reviews</a>' +
+                "</div>"
+              : "") +
             '<div class="pp-price-row">' +
               '<span class="pp-price">' + N.money(p.price) + "</span>" +
               (p.compareAt ? '<span class="pp-old">' + N.money(p.compareAt) + "</span>" : "") +
@@ -155,31 +157,37 @@
         "</section>" +
 
         /* ---- reviews ---- */
-        '<section class="reviews" id="reviews">' +
-          '<span class="kicker">Reviews</span>' +
-          '<h2 class="section-title" style="margin-bottom:26px">What buyers say.</h2>' +
-          '<div class="review-summary">' +
-            '<span class="rs-score">' + p.rating.toFixed(1) + "</span>" +
-            "<div>" +
-              '<div class="rs-stars">' + N.stars(p.rating) + "</div>" +
-              '<div class="rs-meta">' + p.reviewCount + " verified reviews · updated " + new Date(p.added).getFullYear() + "</div>" +
-            "</div>" +
-          "</div>" +
-          p.reviews.map(function (r) {
-            var initials = r.name.split(" ").map(function (w) { return w[0]; }).join("").slice(0, 2).toUpperCase();
-            return (
-              '<div class="review-card">' +
-                '<div class="rc-head">' +
-                  '<span class="t-avatar">' + initials + "</span>" +
-                  "<div><div class=\"rc-name\">" + N.esc(r.name) + '</div><div class="rc-role">' + N.esc(r.role) + "</div></div>" +
-                  '<div class="rc-stars">' + N.stars(r.rating) + "</div>" +
+        (p.reviewCount > 0 && p.rating != null && Array.isArray(p.reviews) && p.reviews.length
+          ? '<section class="reviews" id="reviews">' +
+              '<span class="kicker">Reviews</span>' +
+              '<h2 class="section-title" style="margin-bottom:26px">What buyers say.</h2>' +
+              '<div class="review-summary">' +
+                '<span class="rs-score">' + p.rating.toFixed(1) + "</span>" +
+                "<div>" +
+                  '<div class="rs-stars">' + N.stars(p.rating) + "</div>" +
+                  '<div class="rs-meta">' + p.reviewCount + " reviews</div>" +
                 "</div>" +
-                '<p class="rc-text">' + N.esc(r.text) + "</p>" +
-                '<div class="rc-date">' + N.esc(r.date) + "</div>" +
-              "</div>"
-            );
-          }).join("") +
-        "</section>" +
+              "</div>" +
+              p.reviews.map(function (r) {
+                var initials = r.name.split(" ").map(function (w) {
+                  return w[0];
+                }).join("").slice(0, 2).toUpperCase();
+
+                return (
+                  '<div class="review-card">' +
+                    '<div class="rc-head">' +
+                      '<span class="t-avatar">' + initials + "</span>" +
+                      "<div><div class=\"rc-name\">" + N.esc(r.name) +
+                      '</div><div class="rc-role">' + N.esc(r.role) + "</div></div>" +
+                      '<div class="rc-stars">' + N.stars(r.rating) + "</div>" +
+                    "</div>" +
+                    '<p class="rc-text">' + N.esc(r.text) + "</p>" +
+                    '<div class="rc-date">' + N.esc(r.date) + "</div>" +
+                  "</div>"
+                );
+              }).join("") +
+            "</section>"
+          : "") +
 
         /* ---- related ---- */
         (related.length
@@ -256,7 +264,6 @@
         "availability": "https://schema.org/InStock",
         "url": D.config.siteUrl + "/product.html?slug=" + encodeURIComponent(p.slug)
       },
-      "aggregateRating": { "@type": "AggregateRating", "ratingValue": p.rating, "reviewCount": p.reviewCount }
     };
     var s = document.createElement("script");
     s.type = "application/ld+json";
