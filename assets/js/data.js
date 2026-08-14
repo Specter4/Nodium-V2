@@ -50,35 +50,13 @@ window.NODIUM = {
           "label": "Products"
         },
         {
-          "value": 12000,
-          "suffix": "+",
-          "label": "Customers"
-        },
-        {
-          "value": 4.9,
-          "suffix": "/5",
-          "label": "Average rating",
-          "decimals": 1
-        },
-        {
           "value": 100,
           "suffix": "%",
           "label": "Lifetime updates"
         }
       ]
     },
-    "marquee": [
-      "Northwind",
-      "Halcyon",
-      "Pivot & Co",
-      "Alpha Labs",
-      "Monochrome",
-      "Stackworks",
-      "Veridian",
-      "Kite & Co",
-      "Obelisk",
-      "Fern & Co"
-    ],
+    "marquee": [],
     "featured": {
       "kicker": "Bestsellers",
       "title": "The products people buy first.",
@@ -117,41 +95,10 @@ window.NODIUM = {
       ]
     },
     "testimonials": {
-      "kicker": "Social proof",
-      "title": "Trusted by 12,000+ makers.",
-      "subtitle": "Freelancers, founders and teams who stopped rebuilding their tools every month.",
-      "items": [
-        {
-          "quote": "Nodium's Life OS turned my chaotic Notion workspace into something I actually enjoy opening every morning. That has never happened before.",
-          "name": "Maya Chen",
-          "role": "Founder, Northwind Studio"
-        },
-        {
-          "quote": "The n8n workflows paid for themselves in the first week. I cut four hours of manual invoicing to zero — and it's been running ever since.",
-          "name": "Daniel Okafor",
-          "role": "Operations Lead, Halcyon Labs"
-        },
-        {
-          "quote": "Easily the most polished templates I've bought anywhere. The typography alone is worth the price. It shows in every client deliverable.",
-          "name": "Sofia Reyes",
-          "role": "Independent Product Designer"
-        },
-        {
-          "quote": "We rebuilt our entire client onboarding on one automation kit. Our customers noticed the difference before we told them anything.",
-          "name": "James Whitfield",
-          "role": "Managing Partner, Pivot & Co"
-        },
-        {
-          "quote": "I've bought from every major template shop. Nodium is in a different league — everything just works, and updates actually arrive.",
-          "name": "Aisha Rahman",
-          "role": "Freelance Brand Strategist"
-        },
-        {
-          "quote": "The commercial license is what sold me. I use their tools with clients without a second thought — rare in this industry.",
-          "name": "Tomás Silva",
-          "role": "Creative Director"
-        }
-      ]
+      "kicker": "Built for modern work",
+      "title": "Systems that earn their place.",
+      "subtitle": "Practical digital products designed to make everyday work clearer, faster and more repeatable.",
+      "items": []
     },
     "newsletter": {
       "kicker": "The Nodium Dispatch",
@@ -170,8 +117,8 @@ window.NODIUM = {
       "imageAlt": "Minimal monochrome desk scene with a laptop and a stack of paper"
     },
     "story": [
-      "Nodium began in 2022 as a single Notion template shared with a few hundred subscribers. The response was surprising: people kept writing in — not for support, but to say the template had quietly changed how they worked. So we kept going, one product at a time.",
-      "Today Nodium is a catalogue of 35+ templates, tools and automations used by more than 12,000 customers in 40+ countries. We're still a small team. We still hand-build everything. And we still ship every product as if the person buying it is the only person we'll ever have."
+      "Nodium began with a simple idea: digital products should be useful in real work, not just impressive in screenshots. We build one product at a time, with clarity, usability and polish taking priority over feature count.",
+      "Nodium is built as a focused catalogue of templates, tools and automations. We're keeping the team and the product line intentionally focused, and we'll let the quality of the work speak for itself."
     ],
     "values": [
       {
@@ -191,49 +138,8 @@ window.NODIUM = {
         "text": "A real human answers every email within 24 hours — usually faster."
       }
     ],
-    "stats": [
-      {
-        "value": 35,
-        "suffix": "+",
-        "label": "Products in the catalogue"
-      },
-      {
-        "value": 12000,
-        "suffix": "+",
-        "label": "Customers served"
-      },
-      {
-        "value": 4.9,
-        "suffix": "/5",
-        "label": "Average rating",
-        "decimals": 1
-      },
-      {
-        "value": 40,
-        "suffix": "+",
-        "label": "Countries reached"
-      }
-    ],
-    "team": [
-      {
-        "name": "Aarav Sen",
-        "role": "Founder — product & design",
-        "initials": "AS",
-        "bio": "Former design lead. Believes a dashboard can be as considered as a typeface."
-      },
-      {
-        "name": "Priya Nair",
-        "role": "Engineering & automation",
-        "initials": "PN",
-        "bio": "Makes the machines work. Has never met an n8n workflow she couldn't improve."
-      },
-      {
-        "name": "Sami Chowdhury",
-        "role": "Customer experience",
-        "initials": "SC",
-        "bio": "Answers your emails. Reads every review. Turns your feedback into the roadmap."
-      }
-    ]
+    "stats": [],
+    "team": []
   },
   "faqs": [
     {
