@@ -223,12 +223,12 @@
         '<div class="mnav-backdrop" data-close-mnav></div>' +
         '<div class="mnav-panel">' +
           '<ul class="mnav-links">' +
-            '<li><a class="mnav-link" href="index.html"' + cur("home") + ">Home</a></li>" +
-            '<li>' +
+            '<li class="mnav-primary"><a class="mnav-link" href="index.html"' + cur("home") + ">Home</a></li>" +
+            '<li class="mnav-primary">' +
               '<button class="mnav-link" id="mnav-products-btn" aria-expanded="false" aria-controls="mnav-cats">Products ' + icon("chev") + "</button>" +
               '<div class="accordion-panel" id="mnav-cats"><div><div class="mnav-cats">' + cats + "</div></div></div>" +
             "</li>" +
-            '<li><a class="mnav-link" href="products.html"' + cur("products") + ">All Products</a></li>" +
+            '<li class="mnav-primary"><a class="mnav-link" href="products.html"' + cur("products") + ">All Products</a></li>" +
             '<li><a class="mnav-link" href="about.html"' + cur("about") + ">About</a></li>" +
             '<li><a class="mnav-link" href="faq.html"' + cur("faq") + ">FAQ</a></li>" +
             '<li><a class="mnav-link" href="contact.html"' + cur("contact") + ">Contact</a></li>" +

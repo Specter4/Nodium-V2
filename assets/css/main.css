@@ -1645,6 +1645,12 @@ h1, h2, h3, h4 {
   .pp-desc-cols { grid-template-columns: 1fr; }
 }
 
+@media (min-width: 901px) {
+  .mobile-nav .mnav-primary {
+    display: none;
+  }
+}
+
 @media (max-width: 900px) {
   .nav-main, .nav-cta { display: none; }
   .hamburger { display: inline-flex; }
