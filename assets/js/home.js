@@ -1,4 +1,4 @@
-/* ==========================================================================
+/* ========================================================================== 
    NODIUM — home.js (index page renderers)
    Renders the featured products, category grid, stats and testimonials
    from the central data file. Hero headline & copy live in index.html.
@@ -53,22 +53,42 @@
       catHost.setAttribute("data-reveal-group", "");
     }
 
-    /* ---- testimonials ---- */
+    /* ---- testimonials / trust section ---- */
     var tHost = document.getElementById("testimonial-grid");
     if (tHost && D.home && D.home.testimonials) {
-      tHost.innerHTML = D.home.testimonials.items.map(function (t) {
-        var initials = t.name.split(" ").map(function (w) { return w[0]; }).join("").slice(0, 2).toUpperCase();
-        return (
-          '<figure class="t-card" data-reveal>' +
-            '<span class="t-mark" aria-hidden="true">"</span>' +
-            '<blockquote class="t-quote">' + N.esc(t.quote) + "</blockquote>" +
-            "<figcaption class=\"t-who\">" +
-              '<span class="t-avatar" aria-hidden="true">' + initials + "</span>" +
-              "<span><span class=\"t-name\">" + N.esc(t.name) + '</span><br><span class="t-role">' + N.esc(t.role) + "</span></span>" +
-            "</figcaption>" +
-          "</figure>"
-        );
-      }).join("");
+      var trust = D.home.testimonials;
+      var sectionHead = tHost.parentElement.querySelector(".section-head");
+      if (sectionHead) {
+        var kicker = sectionHead.querySelector(".kicker");
+        var title = sectionHead.querySelector(".section-title");
+        var subtitle = sectionHead.querySelector(".section-sub");
+        if (kicker) kicker.textContent = trust.kicker || "";
+        if (title) title.textContent = trust.title || "";
+        if (subtitle) subtitle.textContent = trust.subtitle || "";
+      }
+
+      if (Array.isArray(trust.items) && trust.items.length) {
+        tHost.innerHTML = trust.items.map(function (t) {
+          var initials = t.name.split(" ").map(function (w) { return w[0]; }).join("").slice(0, 2).toUpperCase();
+          return (
+            '<figure class="t-card" data-reveal>' +
+              '<span class="t-mark" aria-hidden="true">"</span>' +
+              '<blockquote class="t-quote">' + N.esc(t.quote) + "</blockquote>" +
+              "<figcaption class=\"t-who\">" +
+                '<span class="t-avatar" aria-hidden="true">' + initials + "</span>" +
+                "<span><span class=\"t-name\">" + N.esc(t.name) + '</span><br><span class="t-role">' + N.esc(t.role) + "</span></span>" +
+              "</figcaption>" +
+            "</figure>"
+          );
+        }).join("");
+      } else {
+        tHost.innerHTML =
+          '<div class="t-card" data-reveal>' +
+            '<span class="t-mark" aria-hidden="true">“</span>' +
+            '<blockquote class="t-quote">We’d rather earn trust one useful product at a time.</blockquote>' +
+            '<div class="t-role">Nodium</div>' +
+          '</div>';
+      }
       tHost.setAttribute("data-reveal-group", "");
     }
 
