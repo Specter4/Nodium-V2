@@ -57,6 +57,17 @@
     var tHost = document.getElementById("testimonial-grid");
     if (tHost && D.home && D.home.testimonials) {
       var trust = D.home.testimonials;
+
+      /* Keep the storefront honest even when an older cached data.js is served. */
+      if (trust.title === "Trusted by 12,000+ makers." || trust.title === "Let the work do the talking.") {
+        trust = {
+          kicker: "A better standard",
+          title: "Made to earn its place.",
+          subtitle: "No inflated numbers. No borrowed credibility. Just thoughtfully built digital products designed to make everyday work clearer, faster and more repeatable.",
+          items: []
+        };
+      }
+
       var sectionHead = tHost.parentElement.querySelector(".section-head");
       if (sectionHead) {
         var kicker = sectionHead.querySelector(".kicker");
@@ -85,7 +96,7 @@
         tHost.innerHTML =
           '<div class="t-card" data-reveal>' +
             '<span class="t-mark" aria-hidden="true">“</span>' +
-            '<blockquote class="t-quote">We’d rather earn trust one useful product at a time.</blockquote>' +
+            '<blockquote class="t-quote">Made to earn its place.</blockquote>' +
             '<div class="t-role">Nodium</div>' +
           '</div>';
       }
