@@ -6,15 +6,6 @@
 (function () {
   "use strict";
 
-  function esc(value) {
-    return String(value == null ? "" : value)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&#039;");
-  }
-
   function init() {
     var root = document.getElementById("product-root");
     if (!root) return;
@@ -32,6 +23,27 @@
 
     var oldForm = document.getElementById("leave-review");
     if (oldForm) oldForm.remove();
+
+    if (!document.getElementById("review-form-styles")) {
+      var style = document.createElement("style");
+      style.id = "review-form-styles";
+      style.textContent =
+        ".review-submit-section{margin-top:clamp(56px,8vw,90px)}" +
+        ".review-submit-card{border:1px solid var(--line);border-radius:var(--radius-card);background:var(--card);padding:clamp(26px,4vw,44px)}" +
+        ".review-submit-intro{max-width:720px;margin:0 0 28px;color:var(--text-2);font-size:14.5px;line-height:1.7}" +
+        ".review-form{display:grid;gap:18px;max-width:820px}" +
+        ".review-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}" +
+        ".review-form label{display:grid;gap:8px;font-size:13px;font-weight:600;color:var(--text)}" +
+        ".review-form label small{font-weight:400;color:var(--text-3)}" +
+        ".review-form input,.review-form select,.review-form textarea{width:100%;border:1px solid var(--line-2);border-radius:10px;background:var(--bg-2);color:var(--text);padding:12px 14px;font:inherit;font-size:14px;outline:none;transition:border-color .2s,box-shadow .2s;box-sizing:border-box}" +
+        ".review-form textarea{resize:vertical;min-height:140px;line-height:1.6}" +
+        ".review-form input:focus,.review-form select:focus,.review-form textarea:focus{border-color:var(--text-2);box-shadow:0 0 0 3px rgba(156,156,156,.12)}" +
+        ".review-form .btn{justify-self:start;margin-top:2px}" +
+        ".review-form-note,.review-form-status{margin:0;color:var(--text-3);font-size:12px;line-height:1.6}" +
+        ".review-form-status{color:var(--text-2)}" +
+        "@media(max-width:640px){.review-form-grid{grid-template-columns:1fr}.review-submit-card{padding:24px 20px}}";
+      document.head.appendChild(style);
+    }
 
     var productName = product ? product.name : "this product";
     var section = document.createElement("section");
